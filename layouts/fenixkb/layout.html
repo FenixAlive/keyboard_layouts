@@ -1,0 +1,734 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style>
+	body {
+		background-color: #f0f0ff;
+		font-family: "DejaVu Sans", Sans;
+	}
+	h1 {
+		color: #0a0;
+		font-size: 1.8em;
+	}
+	h2 {
+		color: #33a;
+		padding-top: 1em;
+		font-size: 1em;
+		width: 17.4em;
+		text-align:center
+	}
+	div#layouts{
+		position: absolute;
+		top: 200px;
+		left: 10px;
+	}
+	div.layout {
+		border: 1px solid #ccc;
+		background-color: #fff;
+		padding: 2px;
+		margin: 10px 0;
+		overflow:visible;
+		width: 18.6em;
+		-moz-border-radius: 0.4em;
+		border-radius: 0.4em;
+	}
+	table.onerow,
+	table.onerow tr,
+	table.onerow td {
+		margin: 0 0;
+		padding: 0 0;
+		overflow: hidden;
+	}
+	table.onerow {
+		margin: -1px 0;
+	}
+	.button {
+		width: 1em;
+		height: 1em;
+		text-align: center;
+		margin: 0.05em;
+		border: 1px solid #ccc;
+		overflow: hidden;
+		-moz-border-radius: 0.3em;
+		border-radius: 0.3em;
+	}
+	.button div {
+		overflow: hidden;
+		width: 100%;
+		height: 100%;
+		font-size: 0.9em;
+	}
+	.special div {
+		color: #f00;
+		font-size: 0.7em;
+	}
+	.modifier div {
+		color: #00f;
+		font-size: 0.7em;
+	}
+	.deadkey { background-color: #f99; }
+	.deadkey div { font-size: 1em; }
+	.finger0 { background-color: #fff; }
+	.finger1 { background-color: #ffc; }
+	.finger2 { background-color: #ddf; }
+	.finger3 { background-color: #cfc; }
+	.finger4 { background-color: #fda; }
+	.finger5 { background-color: #fcd; }
+	.finger6 { background-color: #cfc; }
+	.finger7 { background-color: #ddf; }
+	.finger8 { background-color: #ffc; }
+	.finger9 { background-color: #cfc; }
+	.pressed { background-color: #030; }
+	.pressed div { color: #ffc; }
+	.button span.special {
+		font-size:1.5em;
+		display: block;
+		margin-top: -0.2em;
+	}
+</style>
+</head>
+<body>
+
+<p>
+	<h2>Fenixkb keyboard layout</h2>
+	<table>
+		<tr><td>Version</td><td>1.0</td></tr>
+		<tr><td>Copyright</td><td>Public Domain</td></tr>
+		<tr><td>Company</td><td>2020@FenixAlive</td></tr>
+	</table>
+</p>
+
+<div id="layouts">
+<div class="layout">
+<table class="onerow"><tr>
+
+<td class="button  finger1" style="" title="`"><div>`</div></td>
+<td class="button  finger1" style="" title="1"><div>1</div></td>
+<td class="button  finger2" style="" title="2"><div>2</div></td>
+<td class="button  finger3" style="" title="3"><div>3</div></td>
+<td class="button  finger4" style="" title="4"><div>4</div></td>
+<td class="button  finger4" style="" title="5"><div>5</div></td>
+<td class="button  finger5" style="" title="6"><div>6</div></td>
+<td class="button  finger5" style="" title="7"><div>7</div></td>
+<td class="button  finger6" style="" title="8"><div>8</div></td>
+<td class="button  finger7" style="" title="9"><div>9</div></td>
+<td class="button  finger8" style="" title="0"><div>0</div></td>
+<td class="button  finger8" style="" title="-"><div>=</div></td>
+<td class="button  finger8" style="" title="="><div>?</div></td>
+<td class="button  special finger8" style="width: 2em;" title="Backspace"><div><span class="special">←</span></div></td>
+</tr></table>
+<table class="onerow"><tr>
+
+<td class="button  special finger1" style="width: 1.5em;" title="Tab"><div><span class="special">↹</span></div></td>
+<td class="button  finger1" style="" title="q"><div>q</div></td>
+<td class="button  finger2" style="" title="w"><div>d</div></td>
+<td class="button  finger3" style="" title="f"><div>r</div></td>
+<td class="button  finger4" style="" title="p"><div>f</div></td>
+<td class="button  finger4" style="" title="g"><div>b</div></td>
+<td class="button  finger5" style="" title="j"><div>k</div></td>
+<td class="button  finger5" style="" title="l"><div>g</div></td>
+<td class="button  finger6" style="" title="u"><div>{</div></td>
+<td class="button  finger7" style="" title="y"><div>}</div></td>
+<td class="button  finger8" style="" title=";"><div>h</div></td>
+<td class="button  finger8" style="" title="["><div>w</div></td>
+<td class="button  finger8" style="" title="]"><div>y</div></td>
+<td class="button  finger8" style="width: 1.5em;" title="\"><div>j</div></td>
+</tr></table>
+<table class="onerow"><tr>
+
+<td class="button  special finger1" style="width: 1.9em;" title="Backspace"><div><span class="special">←</span></div></td>
+<td class="button  finger1" style="" title="a"><div>a</div></td>
+<td class="button  finger2" style="" title="r"><div>s</div></td>
+<td class="button  finger3" style="" title="s"><div>i</div></td>
+<td class="button  finger4" style="" title="t"><div>t</div></td>
+<td class="button  finger4" style="" title="d"><div>/</div></td>
+<td class="button  finger5" style="" title="h"><div>p</div></td>
+<td class="button  finger5" style="" title="n"><div>n</div></td>
+<td class="button  finger6" style="" title="e"><div>e</div></td>
+<td class="button  finger7" style="" title="i"><div>o</div></td>
+<td class="button  finger8" style="" title="o"><div>u</div></td>
+<td class="button  finger8" style="" title="'"><div>'</div></td>
+<td class="button  special finger8" style="width: 2.4em;" title="Enter"><div><span class="special">↵</span></div></td>
+</tr></table>
+<table class="onerow"><tr>
+
+<td class="button  modifier finger1" style="width: 1.25em;" title="LShift"><div><span class="special">⇧</span></div></td>
+<td class="button  deadkey" style="" title="-"><div>´</div></td>
+<td class="button  finger1" style="" title="z"><div>;</div></td>
+<td class="button  finger2" style="" title="x"><div>z</div></td>
+<td class="button  finger3" style="" title="c"><div>x</div></td>
+<td class="button  finger4" style="" title="v"><div>c</div></td>
+<td class="button  finger4" style="" title="b"><div>v</div></td>
+<td class="button  finger5" style="" title="k"><div>m</div></td>
+<td class="button  finger5" style="" title="m"><div>l</div></td>
+<td class="button  finger6" style="" title=","><div>-</div></td>
+<td class="button  finger7" style="" title="."><div>,</div></td>
+<td class="button  finger8" style="" title="/"><div>.</div></td>
+<td class="button  modifier finger8" style="width: 3em;" title="RShift"><div>RShift</div></td>
+</tr></table>
+<table class="onerow"><tr>
+
+<td class="button  modifier finger1" style="width: 1.25em;" title="LCtrl"><div>LCt</div></td>
+<td class="button  modifier finger1" style="width: 1.25em;" title="LWin"><div>LW</div></td>
+<td class="button  modifier finger1" style="width: 1.25em;" title="LAlt"><div>LAlt</div></td>
+<td class="button  special finger9" style="width: 7.75em;" title="Space"><div>Space</div></td>
+<td class="button  modifier finger8" style="width: 1.25em;" title="AltGr"><div>AGr</div></td>
+<td class="button  modifier finger8" style="width: 1.25em;" title="RWin"><div>RW</div></td>
+<td class="button  finger8" style="width: 1.25em;" title="."><div>.</div></td>
+<td class="button  modifier finger8" style="width: 1.25em;" title="RCtrl"><div>RCt</div></td>
+</tr></table>
+</div>
+
+<div class="layout">
+<table class="onerow"><tr>
+<td class="button  finger1" style="" title="~"><div>~</div></td>
+<td class="button  finger1" style="" title="!"><div>!</div></td>
+<td class="button  finger2" style="" title="@"><div>@</div></td>
+<td class="button  finger3" style="" title="#"><div>#</div></td>
+<td class="button  finger4" style="" title="$"><div>$</div></td>
+<td class="button  finger4" style="" title="%"><div>%</div></td>
+<td class="button  finger5" style="" title="^"><div>^</div></td>
+<td class="button  finger5" style="" title="&amp;"><div>&amp;</div></td>
+<td class="button  finger6" style="" title="*"><div>*</div></td>
+<td class="button  finger7" style="" title="("><div>(</div></td>
+<td class="button  finger8" style="" title=")"><div>)</div></td>
+<td class="button  finger8" style="" title="_"><div>+</div></td>
+<td class="button  finger8" style="" title="+"><div>¿</div></td>
+<td class="button  special finger8" style="width: 2em;" title="Backspace"><div><span class="special">←</span></div></td>
+</tr></table>
+<table class="onerow"><tr>
+
+<td class="button  special finger1" style="width: 1.5em;" title="Tab"><div><span class="special">↹</span></div></td>
+<td class="button  finger1" style="" title="Q"><div>Q</div></td>
+<td class="button  finger2" style="" title="W"><div>D</div></td>
+<td class="button  finger3" style="" title="F"><div>R</div></td>
+<td class="button  finger4" style="" title="P"><div>F</div></td>
+<td class="button  finger4" style="" title="G"><div>B</div></td>
+<td class="button  finger5" style="" title="J"><div>K</div></td>
+<td class="button  finger5" style="" title="L"><div>G</div></td>
+<td class="button  finger6" style="" title="U"><div>[</div></td>
+<td class="button  finger7" style="" title="Y"><div>]</div></td>
+<td class="button  finger8" style="" title=":"><div>H</div></td>
+<td class="button  finger8" style="" title="{"><div>W</div></td>
+<td class="button  finger8" style="" title="}"><div>Y</div></td>
+<td class="button  finger8" style="width: 1.5em;" title="|"><div>J</div></td>
+</tr></table>
+<table class="onerow"><tr>
+
+<td class="button  special finger1" style="width: 1.9em;" title="Capslock"><div><span class="special">⇪</span></div></td>
+<td class="button  finger1" style="" title="A"><div>A</div></td>
+<td class="button  finger2" style="" title="R"><div>S</div></td>
+<td class="button  finger3" style="" title="S"><div>I</div></td>
+<td class="button  finger4" style="" title="T"><div>T</div></td>
+<td class="button  finger4" style="" title="D"><div>\</div></td>
+<td class="button  finger5" style="" title="H"><div>P</div></td>
+<td class="button  finger5" style="" title="N"><div>N</div></td>
+<td class="button  finger6" style="" title="E"><div>E</div></td>
+<td class="button  finger7" style="" title="I"><div>O</div></td>
+<td class="button  finger8" style="" title="O"><div>U</div></td>
+<td class="button  finger8" style="" title="""><div>"</div></td>
+<td class="button  special finger8" style="width: 2.4em;" title="Enter"><div><span class="special">↵</span></div></td>
+</tr></table>
+<table class="onerow"><tr>
+
+<td class="button  modifier pressed" style="width: 1.25em;" title="LShift"><div><span class="special">⇧</span></div></td>
+<td class="button  deadkey" style="" title="_"><div>¨</div></td>
+<td class="button  finger1" style="" title="Z"><div>:</div></td>
+<td class="button  finger2" style="" title="X"><div>Z</div></td>
+<td class="button  finger3" style="" title="C"><div>X</div></td>
+<td class="button  finger4" style="" title="V"><div>C</div></td>
+<td class="button  finger4" style="" title="B"><div>V</div></td>
+<td class="button  finger5" style="" title="K"><div>M</div></td>
+<td class="button  finger5" style="" title="M"><div>L</div></td>
+<td class="button  finger6" style="" title="&lt;"><div>_</div></td>
+<td class="button  finger7" style="" title="&gt;"><div>&lt;</div></td>
+<td class="button  finger8" style="" title="?"><div>&gt;</div></td>
+<td class="button  modifier pressed" style="width: 3em;" title="RShift"><div>RShift</div></td>
+</tr></table>
+<table class="onerow"><tr>
+
+<td class="button  modifier finger1" style="width: 1.25em;" title="LCtrl"><div>LCt</div></td>
+<td class="button  modifier finger1" style="width: 1.25em;" title="LWin"><div>LW</div></td>
+<td class="button  modifier finger1" style="width: 1.25em;" title="LAlt"><div>LAlt</div></td>
+<td class="button  special finger9" style="width: 7.75em;" title="Space"><div>Space</div></td>
+<td class="button  modifier finger8" style="width: 1.25em;" title="AltGr"><div>AGr</div></td>
+<td class="button  modifier finger8" style="width: 1.25em;" title="RWin"><div>RW</div></td>
+<td class="button  finger8" style="width: 1.25em;" title="."><div>.</div></td>
+<td class="button  modifier finger8" style="width: 1.25em;" title="RCtrl"><div>RCt</div></td>
+</tr></table>
+</div>
+
+<div class="layout">
+<table class="onerow"><tr>
+<td class="button  finger1" style="" title="~"><div>¬</div></td>
+<td class="button  finger1" style="" title="¡"><div>¡</div></td>
+<td class="button  finger2" style="" title="º"><div>º</div></td>
+<td class="button  finger3" style="" title="ª"><div>ª</div></td>
+<td class="button  finger4" style="" title="¢"><div>¢</div></td>
+<td class="button  finger4" style="" title="€"><div>€</div></td>
+<td class="button  finger5" style="" title="ħ"><div>ħ</div></td>
+<td class="button  finger5" style="" title="ð"><div>ð</div></td>
+<td class="button  finger6" style="" title="þ"><div>þ</div></td>
+<td class="button  finger7" style="" title="‘"><div>‘</div></td>
+<td class="button  finger8" style="" title="’"><div>’</div></td>
+<td class="button  finger8" style="" title="–"><div>«</div></td>
+<td class="button  finger8" style="" title="×"><div>»</div></td>
+<td class="button  special finger8" style="width: 2em;" title="Backspace"><div><span class="special">←</span></div></td>
+</tr></table>
+<table class="onerow"><tr>
+
+<td class="button  special finger1" style="width: 1.5em;" title="Tab"><div><span class="special">↹</span></div></td>
+<td class="button  finger1" style="" title="ä"><div>1</div></td>
+<td class="button  finger2" style="" title="å"><div>2</div></td>
+<td class="button  finger3" style="" title="ã"><div>3</div></td>
+<td class="button  finger4" style="" title="ø"><div>4</div></td>
+<td class="button  finger4" style="" title="˛"><div>5</div></td>
+<td class="button  finger5" style="" title="đ"><div>6</div></td>
+<td class="button  finger5" style="" title="ł"><div>7</div></td>
+<td class="button  finger6" style="" title="ú"><div>8</div></td>
+<td class="button  finger7" style="" title="ü"><div>9</div></td>
+<td class="button  finger8" style="" title="ö"><div>0</div></td>
+<td class="button  finger8" style="" title="«"><div>ü</div></td>
+<td class="button  finger8" style="" title="»"><div>~</div></td>
+<td class="button  finger8" style="width: 1.5em;" title="*"><div></div></td>
+</tr></table>
+<table class="onerow"><tr>
+
+<td class="button  special finger1" style="width: 1.9em;" title="Backspace"><div><span class="special">←</span></div></td>
+<td class="button  finger1" style="" title="á"><div>á</div></td>
+<td class="button  finger2" style="" title="`"><div>+</div></td>
+<td class="button  finger3" style="" title="ß"><div>í</div></td>
+<td class="button  finger4" style="" title="´"><div>=</div></td>
+<td class="button  finger4" style="" title="¨"><div>|</div></td>
+<td class="button  finger5" style="" title="ˇ"><div>?</div></td>
+<td class="button  finger5" style="" title="ñ"><div>ñ</div></td>
+<td class="button  finger6" style="" title="é"><div>é</div></td>
+<td class="button  finger7" style="" title="í"><div>ó</div></td>
+<td class="button  finger8" style="" title="ó"><div>ú</div></td>
+<td class="button  finger8" style="" title="õ"><div>`</div></td>
+<td class="button  special finger8" style="width: 2.4em;" title="Enter"><div><span class="special">↵</span></div></td>
+</tr></table>
+<table class="onerow"><tr>
+
+<td class="button  modifier finger1" style="width: 1.25em;" title="LShift"><div><span class="special">⇧</span></div></td>
+<td class="button  finger1" style="" title="–"><div></div></td>
+<td class="button  finger1" style="" title="!"><div>!</div></td>
+<td class="button  finger2" style="" title="@"><div>@</div></td>
+<td class="button  finger3" style="" title="#"><div>#</div></td>
+<td class="button  finger4" style="" title="$"><div>$</div></td>
+<td class="button  finger4" style="" title="%"><div>%</div></td>
+<td class="button  finger5" style="" title="^"><div>^</div></td>
+<td class="button  finger5" style="" title="&amp;"><div>&amp;</div></td>
+<td class="button  finger6" style="" title="*"><div>*</div></td>
+<td class="button  finger7" style="" title="("><div>(</div></td>
+<td class="button  finger8" style="" title=")"><div>)</div></td>
+<td class="button  modifier finger8" style="width: 3em;" title="RShift"><div>RShift</div></td>
+</tr></table>
+<table class="onerow"><tr>
+
+<td class="button  modifier finger1" style="width: 1.25em;" title="LCtrl"><div>LCt</div></td>
+<td class="button  modifier finger1" style="width: 1.25em;" title="LWin"><div>LW</div></td>
+<td class="button  modifier finger1" style="width: 1.25em;" title="LAlt"><div>LAlt</div></td>
+<td class="button  special finger9" style="width: 7.75em;" title="Space"><div>Space</div></td>
+<td class="button  modifier pressed" style="width: 1.25em;" title="AltGr"><div>AGr</div></td>
+<td class="button  modifier finger8" style="width: 1.25em;" title="RWin"><div>RW</div></td>
+<td class="button  finger8" style="width: 1.25em;" title=""><div></div></td>
+<td class="button  modifier finger8" style="width: 1.25em;" title="RCtrl"><div>RCt</div></td>
+</tr></table>
+</div>
+
+<div class="layout">
+<table class="onerow"><tr>
+<td class="button  finger1" style="" title="~"><div>~</div></td>
+<td class="button  finger1" style="" title="¹"><div>¹</div></td>
+<td class="button  finger2" style="" title="²"><div>²</div></td>
+<td class="button  finger3" style="" title="³"><div>³</div></td>
+<td class="button  finger4" style="" title="£"><div>£</div></td>
+<td class="button  finger4" style="" title="¥"><div>¥</div></td>
+<td class="button  finger5" style="" title="Ħ"><div>Ħ</div></td>
+<td class="button  finger5" style="" title="Ð"><div>Ð</div></td>
+<td class="button  finger6" style="" title="Þ"><div>Þ</div></td>
+<td class="button  finger7" style="" title="“"><div>“</div></td>
+<td class="button  finger8" style="" title="”"><div>”</div></td>
+<td class="button  finger8" style="" title="—"><div></div></td>
+<td class="button  finger8" style="" title="÷"><div></div></td>
+<td class="button  special finger8" style="width: 2em;" title="Backspace"><div><span class="special">←</span></div></td>
+</tr></table>
+<table class="onerow"><tr>
+
+<td class="button  special finger1" style="width: 1.5em;" title="Tab"><div><span class="special">↹</span></div></td>
+<td class="button  finger1" style="" title="Ä"><div></div></td>
+<td class="button  finger2" style="" title="Å"><div></div></td>
+<td class="button  finger3" style="" title="Ã"><div></div></td>
+<td class="button  finger4" style="" title="Ø"><div></div></td>
+<td class="button  finger4" style="" title="~"><div></div></td>
+<td class="button  finger5" style="" title="Đ"><div></div></td>
+<td class="button  finger5" style="" title="Ł"><div></div></td>
+<td class="button  finger6" style="" title="Ú"><div></div></td>
+<td class="button  finger7" style="" title="Ü"><div></div></td>
+<td class="button  finger8" style="" title="Ö"><div></div></td>
+<td class="button  finger8" style="" title="‹"><div>Ü</div></td>
+<td class="button  deadkey" style="" title="›"><div>¨</div></td>
+<td class="button  finger8" style="width: 1.5em;" title="~"><div></div></td>
+</tr></table>
+<table class="onerow"><tr>
+
+<td class="button  special finger1" style="width: 1.9em;" title="Backspace"><div><span class="special">←</span></div></td>
+<td class="button  finger1" style="" title="Á"><div>Á</div></td>
+<td class="button  finger2" style="" title="~"><div></div></td>
+<td class="button  finger3" style="" title="~"><div>Í</div></td>
+<td class="button  finger4" style="" title="˝"><div></div></td>
+<td class="button  finger4" style="" title="~"><div>÷</div></td>
+<td class="button  finger5" style="" title="~"><div>¿</div></td>
+<td class="button  finger5" style="" title="Ñ"><div>Ñ</div></td>
+<td class="button  finger6" style="" title="É"><div>É</div></td>
+<td class="button  finger7" style="" title="Í"><div>Ó</div></td>
+<td class="button  finger8" style="" title="Ó"><div>Ú</div></td>
+<td class="button  deadkey" style="" title="Õ"><div>´</div></td>
+<td class="button  special finger8" style="width: 2.4em;" title="Enter"><div><span class="special">↵</span></div></td>
+</tr></table>
+<table class="onerow"><tr>
+
+<td class="button  modifier pressed" style="width: 1.25em;" title="LShift"><div><span class="special">⇧</span></div></td>
+<td class="button  finger1" style="" title="—"><div></div></td>
+<td class="button  finger1" style="" title="Æ"><div>¡</div></td>
+<td class="button  finger2" style="" title="~"><div></div></td>
+<td class="button  finger3" style="" title="Ç"><div></div></td>
+<td class="button  finger4" style="" title="Œ"><div></div></td>
+<td class="button  finger4" style="" title="~"><div></div></td>
+<td class="button  finger5" style="" title="~"><div></div></td>
+<td class="button  finger5" style="" title="~"><div></div></td>
+<td class="button  finger6" style="" title="~"><div>×</div></td>
+<td class="button  finger7" style="" title="~"><div></div></td>
+<td class="button  finger8" style="" title="~"><div></div></td>
+<td class="button  modifier pressed" style="width: 3em;" title="RShift"><div>RShift</div></td>
+</tr></table>
+<table class="onerow"><tr>
+
+<td class="button  modifier finger1" style="width: 1.25em;" title="LCtrl"><div>LCt</div></td>
+<td class="button  modifier finger1" style="width: 1.25em;" title="LWin"><div>LW</div></td>
+<td class="button  modifier finger1" style="width: 1.25em;" title="LAlt"><div>LAlt</div></td>
+<td class="button  finger9" style="width: 7.75em;" title=" "><div> </div></td>
+<td class="button  modifier pressed" style="width: 1.25em;" title="AltGr"><div>AGr</div></td>
+<td class="button  modifier finger8" style="width: 1.25em;" title="RWin"><div>RW</div></td>
+<td class="button  finger8" style="width: 1.25em;" title=""><div></div></td>
+<td class="button  modifier finger8" style="width: 1.25em;" title="RCtrl"><div>RCt</div></td>
+</tr></table>
+</div>
+<div class="layout">
+<table class="onerow"><tr>
+
+<td class="button  finger1" style="" title=""><div></div></td>
+<td class="button  finger1" style="" title=""><div></div></td>
+<td class="button  finger2" style="" title=""><div></div></td>
+<td class="button  finger3" style="" title=""><div></div></td>
+<td class="button  finger4" style="" title=""><div></div></td>
+<td class="button  finger4" style="" title=""><div></div></td>
+<td class="button  finger5" style="" title=""><div></div></td>
+<td class="button  finger5" style="" title=""><div></div></td>
+<td class="button  finger6" style="" title=""><div></div></td>
+<td class="button  finger7" style="" title=""><div></div></td>
+<td class="button  finger8" style="" title=""><div></div></td>
+<td class="button  finger8" style="" title=""><div></div></td>
+<td class="button  finger8" style="" title=""><div></div></td>
+<td class="button  special finger8" style="width: 2em;" title="Backspace"><div><span class="special">←</span></div></td>
+</tr></table>
+<table class="onerow"><tr>
+
+<td class="button  special finger1" style="width: 1.5em;" title="Tab"><div><span class="special">↹</span></div></td>
+<td class="button  finger1" style="" title=""><div></div></td>
+<td class="button  finger2" style="" title="ẃ"><div></div></td>
+<td class="button  finger3" style="" title=""><div></div></td>
+<td class="button  finger4" style="" title="ṕ"><div></div></td>
+<td class="button  finger4" style="" title="ǵ"><div></div></td>
+<td class="button  finger5" style="" title=""><div></div></td>
+<td class="button  finger5" style="" title="ĺ"><div>ĺ</div></td>
+<td class="button  finger6" style="" title="ú"><div>ú</div></td>
+<td class="button  finger7" style="" title="ý"><div></div></td>
+<td class="button  finger8" style="" title=""><div></div></td>
+<td class="button  finger8" style="" title=""><div></div></td>
+<td class="button  finger8" style="" title=""><div></div></td>
+<td class="button  finger8" style="width: 1.5em;" title=""><div></div></td>
+</tr></table>
+<table class="onerow"><tr>
+
+<td class="button  finger1" style="width: 1.9em;" title=""><div></div></td>
+<td class="button  finger1" style="" title="á"><div>á</div></td>
+<td class="button  finger2" style="" title="ŕ"><div></div></td>
+<td class="button  finger3" style="" title="ś"><div>í</div></td>
+<td class="button  finger4" style="" title=""><div></div></td>
+<td class="button  finger4" style="" title=""><div></div></td>
+<td class="button  finger5" style="" title=""><div></div></td>
+<td class="button  finger5" style="" title="ń"><div>ñ</div></td>
+<td class="button  finger6" style="" title="é"><div>é</div></td>
+<td class="button  finger7" style="" title="í"><div>ó</div></td>
+<td class="button  finger8" style="" title="ó"><div>ú</div></td>
+<td class="button  finger8" style="" title=""><div></div></td>
+<td class="button  special finger8" style="width: 2.4em;" title="Enter"><div><span class="special">↵</span></div></td>
+</tr></table>
+<table class="onerow"><tr>
+
+<td class="button  modifier finger1" style="width: 1.25em;" title="LShift"><div><span class="special">⇧</span></div></td>
+<td class="button  finger1" style="" title=""><div></div></td>
+<td class="button  finger1" style="" title="ź"><div></div></td>
+<td class="button  finger2" style="" title=""><div></div></td>
+<td class="button  finger3" style="" title="ć"><div></div></td>
+<td class="button  finger4" style="" title=""><div></div></td>
+<td class="button  finger4" style="" title=""><div></div></td>
+<td class="button  finger5" style="" title="ḱ"><div></div></td>
+<td class="button  finger5" style="" title="ḿ"><div></div></td>
+<td class="button  finger6" style="" title=""><div></div></td>
+<td class="button  finger7" style="" title=""><div></div></td>
+<td class="button  finger8" style="" title=""><div></div></td>
+<td class="button  modifier finger8" style="width: 3em;" title="RShift"><div>RShift</div></td>
+</tr></table>
+<table class="onerow"><tr>
+
+<td class="button  modifier finger1" style="width: 1.25em;" title="LCtrl"><div>LCt</div></td>
+<td class="button  modifier finger1" style="width: 1.25em;" title="LWin"><div>LW</div></td>
+<td class="button  modifier finger1" style="width: 1.25em;" title="LAlt"><div>LAlt</div></td>
+<td class="button  deadkey" style="width: 7.75em;" title="´"><div>´</div></td>
+<td class="button  modifier finger8" style="width: 1.25em;" title="AltGr"><div>AGr</div></td>
+<td class="button  modifier finger8" style="width: 1.25em;" title="RWin"><div>RW</div></td>
+<td class="button  special finger8" style="width: 1.25em;" title="3"><div></div></td>
+<td class="button  modifier finger8" style="width: 1.25em;" title="RCtrl"><div>RCt</div></td>
+</tr></table>
+</div>
+
+<div class="layout">
+<table class="onerow"><tr>
+<td class="button  finger1" style="" title=""><div></div></td>
+<td class="button  finger1" style="" title=""><div></div></td>
+<td class="button  finger2" style="" title=""><div></div></td>
+<td class="button  finger3" style="" title=""><div></div></td>
+<td class="button  finger4" style="" title=""><div></div></td>
+<td class="button  finger4" style="" title=""><div></div></td>
+<td class="button  finger5" style="" title=""><div></div></td>
+<td class="button  finger5" style="" title=""><div></div></td>
+<td class="button  finger6" style="" title=""><div></div></td>
+<td class="button  finger7" style="" title=""><div></div></td>
+<td class="button  finger8" style="" title=""><div></div></td>
+<td class="button  finger8" style="" title=""><div></div></td>
+<td class="button  finger8" style="" title=""><div></div></td>
+<td class="button  special finger8" style="width: 2em;" title="Backspace"><div><span class="special">←</span></div></td>
+</tr></table>
+
+<table class="onerow"><tr>
+<td class="button  special finger1" style="width: 1.5em;" title="Tab"><div><span class="special">↹</span></div></td>
+<td class="button  finger1" style="" title=""><div></div></td>
+<td class="button  finger2" style="" title="Ẃ"><div></div></td>
+<td class="button  finger3" style="" title=""><div></div></td>
+<td class="button  finger4" style="" title="Ṕ"><div></div></td>
+<td class="button  finger4" style="" title="Ǵ"><div></div></td>
+<td class="button  finger5" style="" title=""><div></div></td>
+<td class="button  finger5" style="" title="Ĺ"><div></div></td>
+<td class="button  finger6" style="" title="Ú"><div></div></td>
+<td class="button  finger7" style="" title="Ý"><div></div></td>
+<td class="button  finger8" style="" title=""><div></div></td>
+<td class="button  finger8" style="" title=""><div></div></td>
+<td class="button  finger8" style="" title=""><div></div></td>
+<td class="button  finger8" style="width: 1.5em;" title=""><div></div></td>
+</tr></table>
+<table class="onerow"><tr>
+
+<td class="button  finger1" style="width: 1.9em;" title=""><div></div></td>
+<td class="button  finger1" style="" title="Á"><div>Á</div></td>
+<td class="button  finger2" style="" title="Ŕ"><div></div></td>
+<td class="button  finger3" style="" title="Ś"><div>Í</div></td>
+<td class="button  finger4" style="" title=""><div></div></td>
+<td class="button  finger4" style="" title=""><div></div></td>
+<td class="button  finger5" style="" title=""><div></div></td>
+<td class="button  finger5" style="" title="Ń"><div>Ñ</div></td>
+<td class="button  finger6" style="" title="É"><div>É</div></td>
+<td class="button  finger7" style="" title="Í"><div>Ó</div></td>
+<td class="button  finger8" style="" title="Ó"><div>Ú</div></td>
+<td class="button  finger8" style="" title=""><div></div></td>
+<td class="button  special finger8" style="width: 2.4em;" title="Enter"><div><span class="special">↵</span></div></td>
+</tr></table>
+<table class="onerow"><tr>
+
+<td class="button  modifier pressed" style="width: 1.25em;" title="LShift"><div><span class="special">⇧</span></div></td>
+<td class="button  finger1" style="" title=""><div></div></td>
+<td class="button  finger1" style="" title="Ź"><div></div></td>
+<td class="button  finger2" style="" title=""><div></div></td>
+<td class="button  finger3" style="" title="Ć"><div></div></td>
+<td class="button  finger4" style="" title=""><div></div></td>
+<td class="button  finger4" style="" title=""><div></div></td>
+<td class="button  finger5" style="" title="Ḱ"><div></div></td>
+<td class="button  finger5" style="" title="Ḿ"><div></div></td>
+<td class="button  finger6" style="" title=""><div></div></td>
+<td class="button  finger7" style="" title=""><div></div></td>
+<td class="button  finger8" style="" title=""><div></div></td>
+<td class="button  modifier pressed" style="width: 3em;" title="RShift"><div>RShift</div></td>
+</tr></table>
+<table class="onerow"><tr>
+
+<td class="button  modifier finger1" style="width: 1.25em;" title="LCtrl"><div>LCt</div></td>
+<td class="button  modifier finger1" style="width: 1.25em;" title="LWin"><div>LW</div></td>
+<td class="button  modifier finger1" style="width: 1.25em;" title="LAlt"><div>LAlt</div></td>
+<td class="button  deadkey" style="width: 7.75em;" title="´"><div>´</div></td>
+<td class="button  modifier finger8" style="width: 1.25em;" title="AltGr"><div>AGr</div></td>
+<td class="button  modifier finger8" style="width: 1.25em;" title="RWin"><div>RW</div></td>
+<td class="button  special finger8" style="width: 1.25em;" title="3"><div></div></td>
+<td class="button  modifier finger8" style="width: 1.25em;" title="RCtrl"><div>RCt</div></td>
+</tr></table>
+</div>
+<div class="layout">
+<table class="onerow"><tr>
+
+<td class="button  finger1" style="" title=""><div></div></td>
+<td class="button  finger1" style="" title=""><div></div></td>
+<td class="button  finger2" style="" title=""><div></div></td>
+<td class="button  finger3" style="" title=""><div></div></td>
+<td class="button  finger4" style="" title=""><div></div></td>
+<td class="button  finger4" style="" title=""><div></div></td>
+<td class="button  finger5" style="" title=""><div></div></td>
+<td class="button  finger5" style="" title=""><div></div></td>
+<td class="button  finger6" style="" title=""><div></div></td>
+<td class="button  finger7" style="" title=""><div></div></td>
+<td class="button  finger8" style="" title=""><div></div></td>
+<td class="button  finger8" style="" title=""><div></div></td>
+<td class="button  finger8" style="" title=""><div></div></td>
+<td class="button  special finger8" style="width: 2em;" title="Backspace"><div><span class="special">←</span></div></td>
+</tr></table>
+<table class="onerow"><tr>
+
+<td class="button  special finger1" style="width: 1.5em;" title="Tab"><div><span class="special">↹</span></div></td>
+<td class="button  finger1" style="" title=""><div></div></td>
+<td class="button  finger2" style="" title="ẅ"><div></div></td>
+<td class="button  finger3" style="" title=""><div></div></td>
+<td class="button  finger4" style="" title=""><div></div></td>
+<td class="button  finger4" style="" title=""><div></div></td>
+<td class="button  finger5" style="" title=""><div></div></td>
+<td class="button  finger5" style="" title=""><div></div></td>
+<td class="button  finger6" style="" title="ü"><div></div></td>
+<td class="button  finger7" style="" title="ÿ"><div></div></td>
+<td class="button  finger8" style="" title=""><div></div></td>
+<td class="button  finger8" style="" title=""><div></div></td>
+<td class="button  finger8" style="" title=""><div></div></td>
+<td class="button  finger8" style="width: 1.5em;" title=""><div></div></td>
+</tr></table>
+<table class="onerow"><tr>
+
+<td class="button  finger1" style="width: 1.9em;" title=""><div></div></td>
+<td class="button  finger1" style="" title="ä"><div></div></td>
+<td class="button  finger2" style="" title=""><div></div></td>
+<td class="button  finger3" style="" title=""><div></div></td>
+<td class="button  finger4" style="" title="ẗ"><div></div></td>
+<td class="button  finger4" style="" title=""><div></div></td>
+<td class="button  finger5" style="" title="ḧ"><div></div></td>
+<td class="button  finger5" style="" title=""><div></div></td>
+<td class="button  finger6" style="" title="ë"><div></div></td>
+<td class="button  finger7" style="" title="ï"><div></div></td>
+<td class="button  finger8" style="" title="ö"><div>ü</div></td>
+<td class="button  finger8" style="" title=""><div></div></td>
+<td class="button  special finger8" style="width: 2.4em;" title="Enter"><div><span class="special">↵</span></div></td>
+</tr></table>
+<table class="onerow"><tr>
+
+<td class="button  modifier finger1" style="width: 1.25em;" title="LShift"><div><span class="special">⇧</span></div></td>
+<td class="button  finger1" style="" title=""><div></div></td>
+<td class="button  finger1" style="" title=""><div></div></td>
+<td class="button  finger2" style="" title="ẍ"><div></div></td>
+<td class="button  finger3" style="" title=""><div></div></td>
+<td class="button  finger4" style="" title=""><div></div></td>
+<td class="button  finger4" style="" title=""><div></div></td>
+<td class="button  finger5" style="" title=""><div></div></td>
+<td class="button  finger5" style="" title=""><div></div></td>
+<td class="button  finger6" style="" title=""><div></div></td>
+<td class="button  finger7" style="" title=""><div></div></td>
+<td class="button  finger8" style="" title=""><div></div></td>
+<td class="button  modifier finger8" style="width: 3em;" title="RShift"><div>RShift</div></td>
+</tr></table>
+<table class="onerow"><tr>
+
+<td class="button  modifier finger1" style="width: 1.25em;" title="LCtrl"><div>LCt</div></td>
+<td class="button  modifier finger1" style="width: 1.25em;" title="LWin"><div>LW</div></td>
+<td class="button  modifier finger1" style="width: 1.25em;" title="LAlt"><div>LAlt</div></td>
+<td class="button  deadkey" style="width: 7.75em;" title="¨"><div>¨</div></td>
+<td class="button  modifier finger8" style="width: 1.25em;" title="AltGr"><div>AGr</div></td>
+<td class="button  modifier finger8" style="width: 1.25em;" title="RWin"><div>RW</div></td>
+<td class="button  special finger8" style="width: 1.25em;" title="5"><div></div></td>
+<td class="button  modifier finger8" style="width: 1.25em;" title="RCtrl"><div>RCt</div></td>
+</tr></table>
+</div>
+<div class="layout">
+<table class="onerow"><tr>
+
+<td class="button  finger1" style="" title=""><div></div></td>
+<td class="button  finger1" style="" title=""><div></div></td>
+<td class="button  finger2" style="" title=""><div></div></td>
+<td class="button  finger3" style="" title=""><div></div></td>
+<td class="button  finger4" style="" title=""><div></div></td>
+<td class="button  finger4" style="" title=""><div></div></td>
+<td class="button  finger5" style="" title=""><div></div></td>
+<td class="button  finger5" style="" title=""><div></div></td>
+<td class="button  finger6" style="" title=""><div></div></td>
+<td class="button  finger7" style="" title=""><div></div></td>
+<td class="button  finger8" style="" title=""><div></div></td>
+<td class="button  finger8" style="" title=""><div></div></td>
+<td class="button  finger8" style="" title=""><div></div></td>
+<td class="button  special finger8" style="width: 2em;" title="Backspace"><div><span class="special">←</span></div></td>
+</tr></table>
+<table class="onerow"><tr>
+
+<td class="button  special finger1" style="width: 1.5em;" title="Tab"><div><span class="special">↹</span></div></td>
+<td class="button  finger1" style="" title=""><div></div></td>
+<td class="button  finger2" style="" title="Ẅ"><div></div></td>
+<td class="button  finger3" style="" title=""><div></div></td>
+<td class="button  finger4" style="" title=""><div></div></td>
+<td class="button  finger4" style="" title=""><div></div></td>
+<td class="button  finger5" style="" title=""><div></div></td>
+<td class="button  finger5" style="" title=""><div></div></td>
+<td class="button  finger6" style="" title="Ü"><div></div></td>
+<td class="button  finger7" style="" title="Ÿ"><div></div></td>
+<td class="button  finger8" style="" title=""><div></div></td>
+<td class="button  finger8" style="" title=""><div></div></td>
+<td class="button  finger8" style="" title=""><div></div></td>
+<td class="button  finger8" style="width: 1.5em;" title=""><div></div></td>
+</tr></table>
+<table class="onerow"><tr>
+
+<td class="button  finger1" style="width: 1.9em;" title=""><div></div></td>
+<td class="button  finger1" style="" title="Ä"><div></div></td>
+<td class="button  finger2" style="" title=""><div></div></td>
+<td class="button  finger3" style="" title=""><div></div></td>
+<td class="button  finger4" style="" title=""><div></div></td>
+<td class="button  finger4" style="" title=""><div></div></td>
+<td class="button  finger5" style="" title="Ḧ"><div></div></td>
+<td class="button  finger5" style="" title=""><div></div></td>
+<td class="button  finger6" style="" title="Ë"><div></div></td>
+<td class="button  finger7" style="" title="Ï"><div></div></td>
+<td class="button  finger8" style="" title="Ö"><div>Ü</div></td>
+<td class="button  finger8" style="" title=""><div></div></td>
+<td class="button  special finger8" style="width: 2.4em;" title="Enter"><div><span class="special">↵</span></div></td>
+</tr></table>
+<table class="onerow"><tr>
+
+<td class="button  modifier pressed" style="width: 1.25em;" title="LShift"><div><span class="special">⇧</span></div></td>
+<td class="button  finger1" style="" title=""><div></div></td>
+<td class="button  finger1" style="" title=""><div></div></td>
+<td class="button  finger2" style="" title="Ẍ"><div></div></td>
+<td class="button  finger3" style="" title=""><div></div></td>
+<td class="button  finger4" style="" title=""><div></div></td>
+<td class="button  finger4" style="" title=""><div></div></td>
+<td class="button  finger5" style="" title=""><div></div></td>
+<td class="button  finger5" style="" title=""><div></div></td>
+<td class="button  finger6" style="" title=""><div></div></td>
+<td class="button  finger7" style="" title=""><div></div></td>
+<td class="button  finger8" style="" title=""><div></div></td>
+<td class="button  modifier pressed" style="width: 3em;" title="RShift"><div>RShift</div></td>
+</tr></table>
+<table class="onerow"><tr>
+
+<td class="button  modifier finger1" style="width: 1.25em;" title="LCtrl"><div>LCt</div></td>
+<td class="button  modifier finger1" style="width: 1.25em;" title="LWin"><div>LW</div></td>
+<td class="button  modifier finger1" style="width: 1.25em;" title="LAlt"><div>LAlt</div></td>
+<td class="button  deadkey" style="width: 7.75em;" title="¨"><div>¨</div></td>
+<td class="button  modifier finger8" style="width: 1.25em;" title="AltGr"><div>AGr</div></td>
+<td class="button  modifier finger8" style="width: 1.25em;" title="RWin"><div>RW</div></td>
+<td class="button  special finger8" style="width: 1.25em;" title="5"><div></div></td>
+<td class="button  modifier finger8" style="width: 1.25em;" title="RCtrl"><div>RCt</div></td>
+</tr></table>
+</div>
