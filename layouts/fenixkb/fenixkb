@@ -103,7 +103,7 @@ xkb_symbols "forty" {
     key <AC08> {[          i,            I,         iacute,           Iacute ]};
     key <AC09> {[          o,            O,         oacute,           Oacute ]};
     key <AC10> {[          u,            U,         uacute,           Uacute ]};
-    key <AC11> {[     Return,        minus,          equal ]};
+    key <AC11> {[     Return,        minus,           equal ]};
 
     key <LSGT> {[   Shift_L,     Shift_L,   Shift_L, Shift_L]};
     key <AB01> {[  				 z,            Z,  1 ]};
